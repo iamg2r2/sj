@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#173c35">
+<title>Teacher Tools | Classroom Learning Lab</title>
+<style>
+:root{--ink:#19352f;--muted:#60756f;--green:#1d5b4b;--mint:#e7f4ec;--cream:#fbfaf5;--line:#dce8df;--gold:#f4c85b}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--cream);color:var(--ink)}
+a{color:inherit}
+.hero{background:linear-gradient(130deg,#173c35,#286b54);color:white;padding:clamp(28px,6vw,68px) 22px 74px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:360px;height:360px;border-radius:50%;right:-100px;top:-170px;background:#ffffff0c;border:1px solid #ffffff22;box-shadow:0 0 0 40px #ffffff08,0 0 0 80px #ffffff05}
+.wrap{max-width:1100px;margin:auto;position:relative;z-index:1}
+.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.75rem;font-weight:800;color:#d4e9d8}
+h1{font-size:clamp(2.2rem,5vw,4rem);letter-spacing:-.045em;line-height:1.04;margin:15px 0}
+.hero p{font-size:clamp(1rem,2vw,1.15rem);line-height:1.65;max-width:650px;color:#e0eee5;margin:0}
+.main{max-width:1100px;margin:-38px auto 0;padding:0 22px 48px;position:relative;z-index:2}
+.tools{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.card{background:white;border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:0 14px 35px #183c3010;display:flex;flex-direction:column;min-height:330px}
+.card-top{padding:25px 25px 10px;display:flex;align-items:center;gap:15px}
+.icon{width:58px;height:58px;border-radius:18px;display:grid;place-items:center;font-size:30px;flex-shrink:0}
+.animal .icon{background:#e3f4e4}.flower .icon{background:#fbe8ed}
+.tag{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;font-weight:800;color:var(--green)}
+h2{font-size:1.35rem;margin:5px 0 0;letter-spacing:-.02em}
+.card-body{padding:10px 25px 22px;flex:1}
+.card-body p{color:var(--muted);line-height:1.65;margin:0}
+.features{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.features span{font-size:.78rem;background:#f1f6f2;border:1px solid #e4eee6;border-radius:999px;padding:6px 10px;color:#3c6252}
+.card-bottom{padding:0 25px 25px}
+.open{display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;background:var(--green);color:white;font-weight:800;padding:13px 16px;border-radius:13px;transition:transform .15s,background .15s}
+.open:hover{background:#124638;transform:translateY(-2px)}
+.open span{font-size:1.1rem}
+.note{margin:25px 2px 0;color:var(--muted);font-size:.88rem;line-height:1.6}
+footer{max-width:1100px;margin:auto;padding:0 22px 28px;color:#72837d;font-size:.8rem;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:700px){.tools{grid-template-columns:1fr}.card{min-height:0}.hero{padding-bottom:65px}.main{padding-left:14px;padding-right:14px}.card-top{padding:22px 20px 10px}.card-body{padding:10px 20px 20px}.card-bottom{padding:0 20px 20px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">A classroom learning collection</div>
+    <h1>Teacher Tools</h1>
+    <p>Interactive learning experiences designed to help teachers explain, explore and discuss concepts with their students.</p>
+  </div>
+</header>
+<main class="main">
+  <section class="tools" aria-label="Available teaching tools">
+    <article class="card animal">
+      <div class="card-top"><div class="icon" aria-hidden="true">🦉</div><div><div class="tag">Early learning · Literacy</div><h2>ABC Animal Journey</h2></div></div>
+      <div class="card-body">
+        <p>Explore the alphabet through an enchanted forest of animal clues. Reveal each animal, practise letter names and sounds, and let children join the journey at the teacher’s pace.</p>
+        <div class="features"><span>Alphabet A–Z</span><span>Letter sounds</span><span>Teacher-led</span></div>
+      </div>
+      <div class="card-bottom"><a class="open" href="./abc-animal-journey.html">Open ABC Animal Journey <span>→</span></a></div>
+    </article>
+    <article class="card flower">
+      <div class="card-top"><div class="icon" aria-hidden="true">🌺</div><div><div class="tag">Science · Botany</div><h2>Hibiscus Dissection Lab</h2></div></div>
+      <div class="card-body">
+        <p>Examine a virtual Hibiscus rosa-sinensis flower in 3D. Rotate the model, explore floral structures, use the ovary cutaway, and guide classroom discussion through a sequence of steps.</p>
+        <div class="features"><span>Interactive 3D</span><span>Flower anatomy</span><span>Guided practical</span></div>
+      </div>
+      <div class="card-bottom"><a class="open" href="./hibiscus-dissection-lab.html">Open Hibiscus Dissection Lab <span>→</span></a></div>
+    </article>
+  </section>
+  <p class="note">Choose a tool above to launch it. For the 3D Hibiscus Dissection Lab, an internet connection is needed to load the Three.js 3D engine.</p>
+</main>
+<footer><span>Teacher Tools · Classroom Learning Lab</span><span>Made for teaching and shared-screen demonstrations</span></footer>
+</body>
+</html>
